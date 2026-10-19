@@ -66,7 +66,7 @@ export function EmployeeProfile({ employee }: { employee: Employee }) {
       <section className="grid grid-cols-1 gap-4 @xl:grid-cols-2 @5xl:grid-cols-4">
         <AlertCard
           icon={Calendar}
-          title="Uncertified Leave"
+          title="Unauthorized Leave"
           value={plural(alerts.uncertifiedLeave.count, 'event')}
           subLabel={alerts.uncertifiedLeave.period}
           severity={highIf(alerts.uncertifiedLeave.count)}
